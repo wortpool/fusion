@@ -1,0 +1,133 @@
+.fps__section{
+    margin-top: 180px;
+}
+
+.container{
+    max-width: 1390px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inner{
+    position: relative;
+}
+
+.background{
+    z-index: 1;
+}
+
+.background__small{
+    width: 227px;
+    height: 226px;
+    background: #1C1836;
+    border-radius: 42px;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+}
+
+.background__small:nth-child(3){
+    right: 3%;
+    left: unset;
+}
+
+.background__big{
+    width: 375px;
+    height: 234px;
+    background: #5E51AA;
+    border-radius: 42px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -50%);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+.block{
+    display: flex;
+    float: right;
+}
+
+.block + .block{
+    margin-top: 84px;
+}
+
+.title{
+    max-width: 512px;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.description,
+.second__description{
+    max-width: 474px;
+    font-size: 27px;
+    font-weight: 500;
+    color: #8F8F94;
+    margin-top: 10px;
+    margin-left: 38px;
+}
+
+.second__description{
+    font-size: 24px;
+    margin-left: unset;
+}
+
+.image{
+    position: relative;
+}
+
+.image img{
+    width: 100%;
+}
+
+.fps,
+.second__fps{
+    font-size: 40px;
+    font-weight: 700;
+    position: absolute;
+    top: -14%;
+    right: 0;
+}
+
+.fps span{
+    color: #80FF61;
+}
+
+.second__fps{
+    left: 0;    
+}
+
+.second__fps span{
+    color: #FF5252;
+}
+
+@media (max-width: 1120px) {
+    .block{
+        flex-direction: column;
+    }
+
+    .image{
+        margin-top: 80px;
+    }
+
+    .sec__title{
+        margin-top: 40px;
+    }
+
+    .block + .block{
+        margin-top: 30px;
+    }
+
+    /* .block:nth-child(2){
+        flex-direction: column-reverse;
+    } */
+}

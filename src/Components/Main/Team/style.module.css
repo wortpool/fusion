@@ -1,0 +1,191 @@
+.team{
+    margin-top: 240px;
+}
+
+.inner{
+    position: relative;
+    height: 550px;
+    display: flex;
+    background-color: #1C1836;
+    border-radius: 42px;
+    padding: 40px 0 0 95px ;
+}
+
+.info{
+    max-width: 830px;
+}
+
+.title{
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.text{
+    font-size: 27px;
+    font-weight: 400;
+    color: #8F8F94;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.nickname{
+    font-size: 36px;
+    font-weight: 700;
+    color: #AF5AF1;
+}
+
+.role{
+    margin-left: 12px;
+}
+
+.role__administation{
+    display: flex;
+    align-items: center;
+    height: 36px;
+
+    background: rgba(136, 35, 215, 0.2);
+    box-shadow: 0px 0px 5px rgba(136, 35, 215, 0.25);
+    border-radius: 5px;
+    padding: 11px;
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #AF5AF1;
+}
+
+.role__player{
+    display: flex;
+    align-items: center;
+    height: 36px;
+
+    background: #625d5d;
+    box-shadow: 0px 0px 5px rgba(136, 35, 215, 0.25);
+    border-radius: 5px;
+    padding: 11px;
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #fff;
+}
+
+.description{
+    max-width: 740px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.dots{
+    max-width: 620px;
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+}
+
+.players__inner{
+    position: relative;
+    display: flex;
+    margin-top: 28px;
+
+}
+
+.players{
+    margin-left: 42px;
+    display: flex;
+}
+
+.player{
+    position: relative;
+    bottom: 0px;
+    transition: all 0.3s;
+}
+
+.player.active{
+    position: relative;
+    bottom: 10px;
+    transition: all 0.3s;
+
+}
+
+.player + .player{
+    margin-left: 16px;
+}
+
+.array{
+    cursor: pointer;
+}
+
+.array__prev{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.array__prev{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.array__next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.main__img{
+    position: absolute;
+    bottom: -4px;
+    right: 10px;
+    overflow: hidden;
+}
+
+.main__img img{
+    position: relative;
+    animation: appearance 0.9s;
+}
+
+@keyframes appearance {
+    0%{
+        right: -200px;
+    }
+    100%{
+        right: 0;
+    }
+}
+
+@media (max-width: 1300px) {
+    .description{
+        max-width: 650px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .inner{
+        padding: 15px 0 0 20px;
+    }
+
+    .description{
+        max-width: 100%;
+    }
+
+    .main__img{
+        display: none;
+    }
+}
+
+@media (max-width: 670px) {
+   .dots{
+        display: none;
+   }
+}

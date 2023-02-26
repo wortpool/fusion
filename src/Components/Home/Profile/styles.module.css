@@ -1,0 +1,142 @@
+.profile{
+    display: flex;
+}
+
+.profile__UI{
+    max-width: 180px;
+}
+
+.button button{
+    width: 100%;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid #7939FF;
+    box-shadow: 0px 0px 8px #7939FF;
+    border-radius: 11px;
+    margin-top: 23px;
+
+   
+    cursor: pointer;
+
+
+}
+
+.button span{
+    font-size: 19px;
+    line-height: 23px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.button span::before{
+    content: 'Редактировать';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #7939FF;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.button span:hover::before{
+    width: 100%;
+}
+
+.cards{
+    margin-top: 17px;
+}
+
+.card{
+    width: 100%;
+    height: 90px;
+    background: #3C843B;
+    border-radius: 15px;
+    padding: 6px 9px;
+
+    position: relative;
+    font-weight: 600;
+}
+
+.card__title{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.card__money{
+    font-size: 20px;
+    line-height: 24px;
+    position: absolute;
+    bottom: 9px;
+}
+
+.card__pin{
+    font-size: 12px;
+    line-height: 14px;
+    position: absolute;
+    right: 8px;
+    bottom: 9px;
+}
+
+.profile__info{
+    margin-left: 20px;
+}
+
+.nickname{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.description{
+    font-size: 20px;
+    font-weight: 500;
+    color: #A9A9A9;
+}
+
+.roles{
+    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.role{
+    margin-right: 15px;
+    margin-top: 9px;
+}
+
+.role__administration{
+    background: rgba(136, 35, 215, 0.2);
+    box-shadow: 0px 0px 5px rgba(136, 35, 215, 0.25);
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #AF5AF1;
+    padding: 6px 8px;
+}
+
+.role__mayor{
+    background: rgba(215, 35, 35, 0.2);
+    box-shadow: 0px 0px 5px rgba(215, 35, 35, 0.25);
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #DF4833;
+    padding: 6px 8px;
+}
+
+.role__policeman{
+    background: rgba(9, 101, 238, 0.2);
+    box-shadow: 0px 0px 5px rgba(9, 101, 238, 0.25);
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #0965EE;
+    padding: 6px 8px;
+
+}

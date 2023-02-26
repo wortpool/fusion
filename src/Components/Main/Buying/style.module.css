@@ -1,0 +1,27 @@
+.buying{
+    margin-bottom: 100px ;
+}
+
+.title,
+.button{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title{
+    max-width: 541px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.button{
+    margin-top: 73px;
+}
+.button a{
+    font-size: 20px;
+    font-weight: 700;
+
+    display: inline-block;
+    padding: 13px 100px;
+    background-color: #7939FF;
+    border-radius: 18px
+}

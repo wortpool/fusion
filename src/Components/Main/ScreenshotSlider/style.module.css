@@ -1,0 +1,28 @@
+.container{
+    max-width: 1672px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 5;
+    position: relative;
+    padding: 10px;
+}
+
+.title{
+    font-size: 48px;
+    font-family: 'Gilroy';
+    font-weight: 700;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 36px;
+}
+
+
+.swiper-slide.swiper-slide-next{
+    display: none !important;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+}
